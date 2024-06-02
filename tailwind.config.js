@@ -69,6 +69,10 @@ module.exports = {
         sparkles: "url('./assets/Sparkles.png')",
         circles: "url('./assets/Circles.png')",
       },
+      fontFamily: {
+        dmsans: ["DM Sans", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
