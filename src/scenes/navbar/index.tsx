@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "./Link";
 import { SelectedPage } from "@/utils/types";
+
 import MobileMenu from "./MobileNav";
 
 type Props = {
@@ -16,7 +17,7 @@ const NavBar = ({ isTopOfPage, setSelectedPage, selectedPage }: Props) => {
     <nav
       className={`flex-between fixed top-0 left-0 right-0 z-30 py-6 ${navBarBackground}`}
     >
-      <div className="flex-between mx-auto w-5/6 px-6">
+      <div className="flex-between mx-auto w-full max-w-6xl min-h-full px-6">
         <div className="flex-between gap-16 w-full">
           {/* Left side */}
           {/* <img src={Logo} alt="log" />

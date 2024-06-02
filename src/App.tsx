@@ -3,6 +3,8 @@ import NavBar from "./scenes/navbar";
 import { SelectedPage } from "./utils/types";
 import Home from "./scenes/home";
 import Benefits from "./scenes/benefits";
+import OurClasses from "./scenes/ourclasses";
+import ContactUs from "./scenes/contactus";
 
 const App = () => {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -26,7 +28,7 @@ const App = () => {
     };
   }, [setSelectedPage]);
   return (
-    <div className="app bg-gray-20 ">
+    <div className="app bg-gray-20">
       <NavBar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -34,6 +36,8 @@ const App = () => {
       />
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage} />
+      <ContactUs setSelectedPage={setSelectedPage} />
     </div>
   );
 };
