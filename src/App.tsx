@@ -1,9 +1,35 @@
-import { Button } from "./components/ui/button";
+import { useEffect, useState } from "react";
+import NavBar from "./scenes/navbar";
+import { SelectedPage } from "./utils/types";
 
 const App = () => {
+  const [selectedPage, setSelectedPage] = useState<SelectedPage>(
+    SelectedPage.Home
+  );
+  const [isTopOfPage, setIsTopOfPage] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        setIsTopOfPage(true);
+        setSelectedPage(SelectedPage.Home);
+      } else {
+        setIsTopOfPage(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [setSelectedPage]);
   return (
-    <div className="app p-10 bg-gray-20 ">
-      <Button>CLICK</Button>
+    <div className="app bg-gray-20 ">
+      <NavBar
+        isTopOfPage={isTopOfPage}
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
+      />
     </div>
   );
 };

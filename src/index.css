@@ -11,9 +11,14 @@ body,
   height: 100%;
   width: 100%;
   font-family: "DM Sans", sans-serif;
+  @apply text-gray-500;
 }
 
 @layer base {
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 20 14.3% 4.1%;
