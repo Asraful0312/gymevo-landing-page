@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { SheetContent, SheetTrigger, Sheet } from "@/components/ui/sheet";
 import { MenuIcon } from "lucide-react";
 import Link from "./Link";
