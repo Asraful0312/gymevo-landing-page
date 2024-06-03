@@ -35,7 +35,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
       >
         {/* HEADER */}
         <motion.div
-          className="min-h-full w-full max-w-5xl px-6 md:px-0"
+          className="min-h-full w-full max-w-5xl md:px-0"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

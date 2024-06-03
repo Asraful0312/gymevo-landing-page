@@ -20,8 +20,7 @@ const NavBar = ({ isTopOfPage, setSelectedPage, selectedPage }: Props) => {
       <div className="flex-between mx-auto w-full max-w-6xl min-h-full px-6">
         <div className="flex-between gap-16 w-full">
           {/* Left side */}
-          {/* <img src={Logo} alt="log" />
-           */}
+     
           <div className="flex items-center gap-1">
             <h2 className="font-bold text-2xl text-primary">EVOGYM</h2>
           </div>
