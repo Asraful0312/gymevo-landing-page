@@ -53,12 +53,13 @@ const classes: Array<ClassType> = [
 
 const OurClasses = ({ setSelectedPage }: Props) => {
   return (
-    <section id="ourclasses" className="w-full bg-primary-100 py-20">
+    <section id="ourclasses" className="bg-primary-100 py-20">
       <motion.div
+        className="mx-auto w-full max-w-6xl px-6"
         onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
       >
         <motion.div
-          className="mx-auto w-full max-w-6xl min-h-full px-6"
+          className="min-h-full w-full max-w-5xl px-6"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}

@@ -40,9 +40,9 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className=" py-20 bg-white">
+    <section id="benefits" className="bg-white py-20">
       <motion.div
-        className="mx-auto w-full max-w-6xl min-h-full px-6"
+        className="mx-auto min-h-full w-full max-w-6xl px-6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
         {/* HEADER */}
@@ -97,7 +97,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           <div>
             {/* TITLE */}
             <div className="relative">
-              <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
+              <div className="before:absolute before:-left-20 before:-top-20 before:z-[1] before:content-abstractwaves">
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
@@ -110,7 +110,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 >
                   <Title>
                     MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                    <span className="text-primary-500">FIT</span>
+                    <span className="text-primary">FIT</span>
                   </Title>
                 </motion.div>
               </div>
